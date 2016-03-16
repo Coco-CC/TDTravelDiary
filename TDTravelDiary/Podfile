@@ -1,0 +1,19 @@
+platform:ios,'9.0'
+pod 'SDWebImage'
+pod 'MJRefresh'
+pod 'AFNetworking'
+pod 'ICViewPager'
+pod 'SVProgressHUD-0.8.1'
+pod 'ShareSDK3'
+pod 'ShareSDK3/ShareSDKUI'
+pod 'ShareSDK3/ShareSDKPlatforms/SinaWeibo'
+pod 'MBProgressHUD'
+pod 'AVOSCloud'
+
+# 如果使用实时通信功能，可以添加：
+pod 'AVOSCloudIM'
+
+# 如果使用崩溃收集功能，可以添加：
+pod 'AVOSCloudCrashReporting'
+pod 'BaiduMapKit'
+pod 'Reachability'

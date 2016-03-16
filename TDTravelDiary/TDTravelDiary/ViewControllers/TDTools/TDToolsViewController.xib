@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TDToolsViewController">
+            <connections>
+                <outlet property="accountbookButton" destination="aPP-tw-yhY" id="7k7-2S-qQe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="weatherButton" destination="t6I-wp-Lx8" id="h0m-Og-Mf4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPP-tw-yhY">
+                    <rect key="frame" x="150" y="331" width="114" height="114"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="114" id="8gM-c2-X2H"/>
+                    </constraints>
+                    <state key="normal" image="iconfont-zhangben.png"/>
+                    <connections>
+                        <action selector="didClickAccountBookButton:" destination="-1" eventType="touchUpInside" id="EhQ-7M-hTM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6I-wp-Lx8">
+                    <rect key="frame" x="150" y="117" width="114" height="114"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" backgroundImage="iconfont-tubiao3tianqirukou.png"/>
+                    <connections>
+                        <action selector="didClickWeatherButton:" destination="-1" eventType="touchUpInside" id="sHv-RD-oNU"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="天气" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsM-DV-fe8">
+                    <rect key="frame" x="165" y="241" width="34" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="ips-AE-ROc"/>
+                        <constraint firstAttribute="height" constant="21" id="w49-6f-Osw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账簿" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hd-gk-t7F">
+                    <rect key="frame" x="170" y="455" width="34" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="mtg-Md-eaI"/>
+                        <constraint firstAttribute="width" constant="34" id="nAe-k7-rMu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.95203076509999995" green="0.95686274510000002" blue="0.92392605299999997" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="VsM-DV-fe8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="165" id="0Mj-2E-ZxE"/>
+                <constraint firstItem="7hd-gk-t7F" firstAttribute="top" secondItem="aPP-tw-yhY" secondAttribute="bottom" constant="10" id="2dH-nq-63S"/>
+                <constraint firstItem="t6I-wp-Lx8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="150" id="40G-5R-vMd"/>
+                <constraint firstAttribute="trailing" secondItem="t6I-wp-Lx8" secondAttribute="trailing" constant="150" id="9Fk-mJ-fbI"/>
+                <constraint firstItem="aPP-tw-yhY" firstAttribute="top" secondItem="t6I-wp-Lx8" secondAttribute="bottom" constant="100" id="O5D-YO-HSv"/>
+                <constraint firstItem="aPP-tw-yhY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="150" id="YmF-FM-rtH"/>
+                <constraint firstItem="VsM-DV-fe8" firstAttribute="top" secondItem="t6I-wp-Lx8" secondAttribute="bottom" constant="10" id="ecG-gx-c4X"/>
+                <constraint firstAttribute="trailing" secondItem="aPP-tw-yhY" secondAttribute="trailing" constant="150" id="f24-qF-owT"/>
+                <constraint firstItem="7hd-gk-t7F" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="170" id="gpH-f0-Deo"/>
+                <constraint firstItem="t6I-wp-Lx8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="117" id="ptY-zd-SCx"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconfont-tubiao3tianqirukou.png" width="114" height="114"/>
+        <image name="iconfont-zhangben.png" width="114" height="114"/>
+    </resources>
+</document>

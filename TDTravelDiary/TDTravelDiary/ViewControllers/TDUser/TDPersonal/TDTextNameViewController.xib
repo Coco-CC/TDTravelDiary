@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TDTextNameViewController">
+            <connections>
+                <outlet property="changeTextName" destination="O5f-t1-pUQ" id="K4y-HE-Std"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入新的用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O5f-t1-pUQ">
+                    <rect key="frame" x="60" y="100" width="490" height="40"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="IcL-e7-io1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYT-r9-g7H">
+                    <rect key="frame" x="40" y="460" width="520" height="40"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="MzJ-vs-TTd"/>
+                    </constraints>
+                    <state key="normal" title="保存修改"/>
+                    <connections>
+                        <action selector="clickButton:" destination="-1" eventType="touchUpInside" id="0eV-2G-z0o"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="CYT-r9-g7H" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="0RE-qk-tFh"/>
+                <constraint firstItem="O5f-t1-pUQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="60" id="CUf-VW-MD3"/>
+                <constraint firstAttribute="trailing" secondItem="CYT-r9-g7H" secondAttribute="trailing" constant="40" id="IlD-Jk-eJO"/>
+                <constraint firstItem="O5f-t1-pUQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="MTq-kj-KzM"/>
+                <constraint firstAttribute="bottom" secondItem="CYT-r9-g7H" secondAttribute="bottom" constant="100" id="nhU-yP-Zz7"/>
+                <constraint firstAttribute="trailing" secondItem="O5f-t1-pUQ" secondAttribute="trailing" constant="50" id="sXq-6g-Kcb"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TDUserHeaderViewController">
+            <connections>
+                <outlet property="headerImage" destination="LSU-pp-2or" id="ezd-L7-nAn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCh-Zr-0Vf">
+                    <rect key="frame" x="40" y="410" width="520" height="40"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="DTq-JP-iuS"/>
+                    </constraints>
+                    <state key="normal" title="选取图片"/>
+                    <connections>
+                        <action selector="clickButtonseletimage:" destination="-1" eventType="touchUpInside" id="UTU-21-35t"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRi-QY-t1u">
+                    <rect key="frame" x="40" y="460" width="520" height="40"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Ova-Q8-7Kv"/>
+                    </constraints>
+                    <state key="normal" title="保存"/>
+                    <connections>
+                        <action selector="clickButtonsave:" destination="-1" eventType="touchUpInside" id="4dk-O8-Ba8"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LSU-pp-2or">
+                    <rect key="frame" x="225" y="100" width="150" height="150"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="YYy-rq-Lyx"/>
+                        <constraint firstAttribute="width" constant="150" id="n1Z-20-hiY"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="VRi-QY-t1u" secondAttribute="bottom" constant="100" id="9vb-K6-vTF"/>
+                <constraint firstItem="LSU-pp-2or" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="QA1-H3-xle"/>
+                <constraint firstItem="hCh-Zr-0Vf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="Qpy-d2-bnK"/>
+                <constraint firstAttribute="trailing" secondItem="hCh-Zr-0Vf" secondAttribute="trailing" constant="40" id="TG8-ba-kX5"/>
+                <constraint firstItem="VRi-QY-t1u" firstAttribute="top" secondItem="hCh-Zr-0Vf" secondAttribute="bottom" constant="10" id="bHy-CF-pXd"/>
+                <constraint firstItem="VRi-QY-t1u" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="cwh-1S-fLz"/>
+                <constraint firstItem="LSU-pp-2or" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="hY7-Hh-hd6"/>
+                <constraint firstAttribute="trailing" secondItem="VRi-QY-t1u" secondAttribute="trailing" constant="40" id="w1U-5n-kyM"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TDCreaterTDViewController">
+            <connections>
+                <outlet property="addImageButton" destination="Wk1-w3-KcZ" id="noF-ZU-b3Q"/>
+                <outlet property="backImageUIView" destination="SqR-GM-rsA" id="K0X-23-BAi"/>
+                <outlet property="backImageView" destination="sJI-Oj-d0H" id="vHI-Nh-DyR"/>
+                <outlet property="cancelButton" destination="Ohm-K9-ziC" id="lL8-Yz-cql"/>
+                <outlet property="msgOkButton" destination="V2L-d3-jgG" id="WDy-gK-AmR"/>
+                <outlet property="nameTextFile" destination="r7R-6l-ppy" id="PgM-FF-ZLq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2L-d3-jgG">
+                    <rect key="frame" x="240" y="490" width="120" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="R0V-N6-r0d"/>
+                        <constraint firstAttribute="width" constant="120" id="yX7-pF-wmX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didClickOkButton:" destination="-1" eventType="touchUpInside" id="LTy-PU-nVa"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入游记名称..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r7R-6l-ppy">
+                    <rect key="frame" x="50" y="100" width="500" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="OIo-9B-9TC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击添加背景图片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Bg-AU-xsb">
+                    <rect key="frame" x="80" y="180" width="440" height="17"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SqR-GM-rsA">
+                    <rect key="frame" x="80" y="207" width="440" height="440"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wk1-w3-KcZ">
+                            <rect key="frame" x="0.0" y="0.0" width="440" height="440"/>
+                            <animations/>
+                            <state key="normal" title="isAdd" backgroundImage="iconfont-msgedit-tianjiatupian.png">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="didClickAddImageButton:" destination="-1" eventType="touchUpInside" id="gmo-FP-gcq"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sJI-Oj-d0H">
+                            <rect key="frame" x="0.0" y="0.0" width="440" height="440"/>
+                            <animations/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ohm-K9-ziC">
+                            <rect key="frame" x="408" y="10" width="22" height="22"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Ohm-K9-ziC" secondAttribute="height" multiplier="1:1" id="KqL-O7-mXq"/>
+                                <constraint firstAttribute="height" constant="22" id="Xf7-uh-Lr7"/>
+                            </constraints>
+                            <state key="normal" title="isCancel" backgroundImage="iconfont-editmsg-quxiao.png">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="didClickCancelButton:" destination="-1" eventType="touchUpInside" id="iYC-9n-Db9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Wk1-w3-KcZ" firstAttribute="top" secondItem="SqR-GM-rsA" secondAttribute="top" id="7c2-pL-nXD"/>
+                        <constraint firstAttribute="trailing" secondItem="sJI-Oj-d0H" secondAttribute="trailing" id="C7Z-r4-s9c"/>
+                        <constraint firstAttribute="bottom" secondItem="Wk1-w3-KcZ" secondAttribute="bottom" id="JLG-Sa-Cau"/>
+                        <constraint firstAttribute="bottom" secondItem="sJI-Oj-d0H" secondAttribute="bottom" id="LN8-2T-IGn"/>
+                        <constraint firstItem="Wk1-w3-KcZ" firstAttribute="leading" secondItem="SqR-GM-rsA" secondAttribute="leading" id="V1w-cs-PpZ"/>
+                        <constraint firstAttribute="trailing" secondItem="Wk1-w3-KcZ" secondAttribute="trailing" id="VS5-gN-umo"/>
+                        <constraint firstItem="sJI-Oj-d0H" firstAttribute="leading" secondItem="SqR-GM-rsA" secondAttribute="leading" id="gRV-fc-5CS"/>
+                        <constraint firstItem="Ohm-K9-ziC" firstAttribute="top" secondItem="SqR-GM-rsA" secondAttribute="top" constant="10" id="hs1-hE-U1P"/>
+                        <constraint firstAttribute="trailing" secondItem="Ohm-K9-ziC" secondAttribute="trailing" constant="10" id="rjf-41-YlQ"/>
+                        <constraint firstItem="sJI-Oj-d0H" firstAttribute="top" secondItem="SqR-GM-rsA" secondAttribute="top" id="tYL-wX-5UV"/>
+                        <constraint firstAttribute="width" secondItem="SqR-GM-rsA" secondAttribute="height" multiplier="1:1" id="wVI-tF-cZR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="r7R-6l-ppy" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Czr-9Q-SgG"/>
+                <constraint firstItem="SqR-GM-rsA" firstAttribute="top" secondItem="2Bg-AU-xsb" secondAttribute="bottom" constant="10" id="KpF-5T-h5H"/>
+                <constraint firstAttribute="trailing" secondItem="SqR-GM-rsA" secondAttribute="trailing" constant="80" id="M2z-2Z-Es2"/>
+                <constraint firstItem="SqR-GM-rsA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="80" id="TbB-oF-uH4"/>
+                <constraint firstItem="r7R-6l-ppy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="Yaj-2C-lsi"/>
+                <constraint firstAttribute="trailing" secondItem="2Bg-AU-xsb" secondAttribute="trailing" constant="80" id="aOD-4C-kNx"/>
+                <constraint firstItem="r7R-6l-ppy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="acI-UD-qgQ"/>
+                <constraint firstAttribute="trailing" secondItem="r7R-6l-ppy" secondAttribute="trailing" constant="50" id="cWB-2I-r1x"/>
+                <constraint firstItem="V2L-d3-jgG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cdB-rL-vpy"/>
+                <constraint firstItem="2Bg-AU-xsb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="80" id="ikw-hV-TIx"/>
+                <constraint firstAttribute="bottom" secondItem="V2L-d3-jgG" secondAttribute="bottom" constant="80" id="vHI-2k-2FQ"/>
+                <constraint firstItem="2Bg-AU-xsb" firstAttribute="top" secondItem="r7R-6l-ppy" secondAttribute="bottom" constant="50" id="xWs-qC-LtI"/>
+            </constraints>
+            <point key="canvasLocation" x="370" y="334"/>
+        </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XUM-5Q-fK8">
+            <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <animations/>
+            <state key="normal" title="Button"/>
+            <point key="canvasLocation" x="353" y="856"/>
+        </button>
+    </objects>
+    <resources>
+        <image name="iconfont-editmsg-quxiao.png" width="30" height="30"/>
+        <image name="iconfont-msgedit-tianjiatupian.png" width="1024" height="1024"/>
+    </resources>
+</document>

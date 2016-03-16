@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="266" id="KGk-i7-Jjw" customClass="TDPlaveTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="556" height="266"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="556" height="265"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yzK-MI-Fye">
+                        <rect key="frame" x="5" y="5" width="546" height="255"/>
+                        <animations/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbJ-Xd-7lV">
+                        <rect key="frame" x="10" y="10" width="496" height="40"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="ihB-S2-7dA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWn-UT-dho">
+                        <rect key="frame" x="10" y="60" width="496" height="30"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="8WF-si-aJg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="旅游路线" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2M-kb-dq8">
+                        <rect key="frame" x="10" y="225" width="496" height="30"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="6HN-Ot-tZv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="LbJ-Xd-7lV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="0f0-gB-OCW"/>
+                    <constraint firstItem="yzK-MI-Fye" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="14c-rm-vb5"/>
+                    <constraint firstAttribute="bottom" secondItem="A2M-kb-dq8" secondAttribute="bottom" constant="10" id="8b8-Xv-RJu"/>
+                    <constraint firstItem="TWn-UT-dho" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="9H5-xL-1jz"/>
+                    <constraint firstAttribute="trailing" secondItem="A2M-kb-dq8" secondAttribute="trailing" constant="50" id="DVM-fT-Oen"/>
+                    <constraint firstAttribute="trailing" secondItem="yzK-MI-Fye" secondAttribute="trailing" constant="5" id="Gxp-s1-A29"/>
+                    <constraint firstAttribute="bottom" secondItem="yzK-MI-Fye" secondAttribute="bottom" constant="5" id="Ita-Wd-MWu"/>
+                    <constraint firstItem="TWn-UT-dho" firstAttribute="top" secondItem="LbJ-Xd-7lV" secondAttribute="bottom" constant="10" id="Lge-dr-9nu"/>
+                    <constraint firstItem="yzK-MI-Fye" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Pzu-Cc-wZS"/>
+                    <constraint firstItem="A2M-kb-dq8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Vug-dm-iGT"/>
+                    <constraint firstItem="LbJ-Xd-7lV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="WqK-5v-2tr"/>
+                    <constraint firstAttribute="trailing" secondItem="TWn-UT-dho" secondAttribute="trailing" constant="50" id="d9d-tp-3nE"/>
+                    <constraint firstAttribute="trailing" secondItem="LbJ-Xd-7lV" secondAttribute="trailing" constant="50" id="jqx-jO-alN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="plaveImageView" destination="yzK-MI-Fye" id="RMu-ip-cTK"/>
+                <outlet property="plaveNameENLabel" destination="TWn-UT-dho" id="ZU3-ct-LT9"/>
+                <outlet property="plaveNameLabel" destination="LbJ-Xd-7lV" id="Rq7-xd-VmY"/>
+            </connections>
+            <point key="canvasLocation" x="325" y="360"/>
+        </tableViewCell>
+    </objects>
+</document>

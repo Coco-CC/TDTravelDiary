@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="diaryTextCell" rowHeight="194" id="KGk-i7-Jjw" customClass="TDDiaryTextViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="194"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="193"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LsW-3t-WwW">
+                        <rect key="frame" x="10" y="13" width="335" height="175"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ya4-0c-HRL">
+                                <rect key="frame" x="8" y="8" width="319" height="18"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ot5-vc-aT0">
+                                <rect key="frame" x="295" y="147" width="20" height="20"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="1Nj-iH-zXI"/>
+                                    <constraint firstAttribute="width" secondItem="ot5-vc-aT0" secondAttribute="height" multiplier="1:1" id="e52-VS-dbW"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="iconfont-pinglun_hemo.png"/>
+                                <connections>
+                                    <action selector="didClickCommentButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="FA0-fL-Vg1"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Irh-f1-t9Y">
+                                <rect key="frame" x="8" y="144" width="239" height="25"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconfont-daohang_hemo.png" translatesAutoresizingMaskIntoConstraints="NO" id="mFE-NG-Iaw">
+                                        <rect key="frame" x="0.0" y="3" width="19" height="19"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="mFE-NG-Iaw" secondAttribute="height" multiplier="1:1" id="8El-db-5LW"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJd-vr-UgQ">
+                                        <rect key="frame" x="29" y="3" width="200" height="19"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="B7b-GC-DPb"/>
+                                    <constraint firstAttribute="trailing" secondItem="yJd-vr-UgQ" secondAttribute="trailing" constant="10" id="JAL-Cc-urz"/>
+                                    <constraint firstItem="yJd-vr-UgQ" firstAttribute="top" secondItem="Irh-f1-t9Y" secondAttribute="top" constant="3" id="SRc-2C-GW1"/>
+                                    <constraint firstAttribute="bottom" secondItem="mFE-NG-Iaw" secondAttribute="bottom" constant="3" id="eYA-o7-82y"/>
+                                    <constraint firstItem="mFE-NG-Iaw" firstAttribute="leading" secondItem="Irh-f1-t9Y" secondAttribute="leading" id="iDj-HL-sHu"/>
+                                    <constraint firstAttribute="bottom" secondItem="yJd-vr-UgQ" secondAttribute="bottom" constant="3" id="nvv-Hx-7tg"/>
+                                    <constraint firstItem="yJd-vr-UgQ" firstAttribute="leading" secondItem="mFE-NG-Iaw" secondAttribute="trailing" constant="10" id="qhN-Nc-Q9J"/>
+                                    <constraint firstItem="mFE-NG-Iaw" firstAttribute="top" secondItem="Irh-f1-t9Y" secondAttribute="top" constant="3" id="vKg-mq-aHr"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5s5-rH-5ho">
+                                <rect key="frame" x="255" y="147" width="20" height="20"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="2AB-FT-WGX"/>
+                                    <constraint firstAttribute="width" secondItem="5s5-rH-5ho" secondAttribute="height" multiplier="1:1" id="VBD-BY-jy4"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="iconfont-zhstxihuan_hemo.png"/>
+                                <connections>
+                                    <action selector="didClickloveButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="UNI-nK-Og0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ya4-0c-HRL" secondAttribute="trailing" constant="8" id="0Jf-g5-Djm"/>
+                            <constraint firstItem="Irh-f1-t9Y" firstAttribute="leading" secondItem="LsW-3t-WwW" secondAttribute="leading" constant="8" id="7pU-oq-XtR"/>
+                            <constraint firstItem="5s5-rH-5ho" firstAttribute="centerY" secondItem="Irh-f1-t9Y" secondAttribute="centerY" id="J9Q-d0-Ib7"/>
+                            <constraint firstItem="5s5-rH-5ho" firstAttribute="leading" secondItem="Irh-f1-t9Y" secondAttribute="trailing" constant="8" id="OyG-hz-3Ke"/>
+                            <constraint firstItem="ot5-vc-aT0" firstAttribute="leading" secondItem="5s5-rH-5ho" secondAttribute="trailing" constant="20" id="aLM-X6-3YG"/>
+                            <constraint firstAttribute="trailing" secondItem="ot5-vc-aT0" secondAttribute="trailing" constant="20" id="aS9-HM-Aa7"/>
+                            <constraint firstAttribute="bottom" secondItem="ot5-vc-aT0" secondAttribute="bottom" constant="8" id="eca-Yz-Vud"/>
+                            <constraint firstItem="ot5-vc-aT0" firstAttribute="centerY" secondItem="5s5-rH-5ho" secondAttribute="centerY" id="k8s-Ry-iqR"/>
+                            <constraint firstItem="Ya4-0c-HRL" firstAttribute="leading" secondItem="LsW-3t-WwW" secondAttribute="leading" constant="8" id="oFK-9F-5cV"/>
+                            <constraint firstItem="Ya4-0c-HRL" firstAttribute="top" secondItem="LsW-3t-WwW" secondAttribute="top" constant="8" id="xAf-ky-KvN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="LsW-3t-WwW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="8mM-yR-DKU"/>
+                    <constraint firstAttribute="trailing" secondItem="LsW-3t-WwW" secondAttribute="trailing" constant="10" id="GMB-6E-x2o"/>
+                    <constraint firstAttribute="bottom" secondItem="LsW-3t-WwW" secondAttribute="bottom" constant="5" id="b0b-YZ-9dW"/>
+                    <constraint firstItem="LsW-3t-WwW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="smF-gx-Mc6"/>
+                    <constraint firstItem="LsW-3t-WwW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="ybx-0b-f64"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="ybx-0b-f64"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="addressLabel" destination="yJd-vr-UgQ" id="5Lk-QI-Ec4"/>
+                <outlet property="addressView" destination="Irh-f1-t9Y" id="1P4-Nt-7zp"/>
+                <outlet property="commentButton" destination="ot5-vc-aT0" id="4F1-Gk-woL"/>
+                <outlet property="loveButton" destination="5s5-rH-5ho" id="7dK-LZ-reA"/>
+                <outlet property="nameLabel" destination="Ya4-0c-HRL" id="X2K-em-qoD"/>
+                <outlet property="rongView" destination="LsW-3t-WwW" id="CKL-sg-leO"/>
+            </connections>
+            <point key="canvasLocation" x="322.5" y="522"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconfont-daohang_hemo.png" width="50" height="50"/>
+        <image name="iconfont-pinglun_hemo.png" width="50" height="50"/>
+        <image name="iconfont-zhstxihuan_hemo.png" width="50" height="50"/>
+    </resources>
+</document>
